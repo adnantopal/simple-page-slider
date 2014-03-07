@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="http://necolas.github.io/normalize.css/3.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="simple-page-slider.css">
+    <style>
+        #page-1 {
+            background-color: #cccccc;
+        }
+        #page-2 {
+            background-color: #aaaaaa;
+        }
+        #page-3 {
+            background-color: #777777;
+        }
+        .page {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="page page-active" id="page-1">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quam repellendus velit. Aliquid architecto
+        aspernatur atque beatae dolore eligendi eum eveniet, exercitationem itaque laudantium libero minus
+        necessitatibus nostrum perspiciatis qui quo repudiandae tenetur veniam veritatis voluptatem! Deleniti distinctio
+        ea hic id impedit mollitia nihil perferendis porro quisquam quod, ratione voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus atque cumque debitis doloribus ea, enim,
+        est explicabo fuga id illo iure libero mollitia neque nulla numquam possimus quidem quisquam recusandae rem
+        repellat, sapiente sed sunt temporibus veniam voluptates? Aspernatur blanditiis commodi debitis delectus
+        dolorem, eaque eligendi enim est eum eveniet facere fugiat laudantium minus molestiae quae quidem recusandae
+        soluta voluptatibus. Hic incidunt, necessitatibus nemo odio optio sed unde! Accusantium at blanditiis dolores
+        dolorum, eaque est modi neque, officia perferendis quaerat quas recusandae repellendus tempora temporibus
+        veritatis. Adipisci dignissimos dolorem eaque eius est ex necessitatibus omnis qui totam! Ullam.</p>
+
+    <a href="#page-2">Go to Page 2</a>
+</div>
+<div class="page" id="page-2">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quam repellendus velit. Aliquid architecto
+        aspernatur atque beatae dolore eligendi eum eveniet, exercitationem itaque laudantium libero minus
+        necessitatibus nostrum perspiciatis qui quo repudiandae tenetur veniam veritatis voluptatem! Deleniti distinctio
+        ea hic id impedit mollitia nihil perferendis porro quisquam quod, ratione voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus atque cumque debitis doloribus ea, enim,
+        est explicabo fuga id illo iure libero mollitia neque nulla numquam possimus quidem quisquam recusandae rem
+        repellat, sapiente sed sunt temporibus veniam voluptates? Aspernatur blanditiis commodi debitis delectus
+        dolorem, eaque eligendi enim est eum eveniet facere fugiat laudantium minus molestiae quae quidem recusandae
+        soluta voluptatibus. Hic incidunt, necessitatibus nemo odio optio sed unde! Accusantium at blanditiis dolores
+        dolorum, eaque est modi neque, officia perferendis quaerat quas recusandae repellendus tempora temporibus
+        veritatis. Adipisci dignissimos dolorem eaque eius est ex necessitatibus omnis qui totam! Ullam.</p>
+
+    <a href="#page-3">Go to Page 3</a>
+</div>
+<div class="page" id="page-3">
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quam repellendus velit. Aliquid architecto
+        aspernatur atque beatae dolore eligendi eum eveniet, exercitationem itaque laudantium libero minus
+        necessitatibus nostrum perspiciatis qui quo repudiandae tenetur veniam veritatis voluptatem! Deleniti distinctio
+        ea hic id impedit mollitia nihil perferendis porro quisquam quod, ratione voluptatibus.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusamus atque cumque debitis doloribus ea, enim,
+        est explicabo fuga id illo iure libero mollitia neque nulla numquam possimus quidem quisquam recusandae rem
+        repellat, sapiente sed sunt temporibus veniam voluptates? Aspernatur blanditiis commodi debitis delectus
+        dolorem, eaque eligendi enim est eum eveniet facere fugiat laudantium minus molestiae quae quidem recusandae
+        soluta voluptatibus. Hic incidunt, necessitatibus nemo odio optio sed unde! Accusantium at blanditiis dolores
+        dolorum, eaque est modi neque, officia perferendis quaerat quas recusandae repellendus tempora temporibus
+        veritatis. Adipisci dignissimos dolorem eaque eius est ex necessitatibus omnis qui totam! Ullam.</p>
+
+    <a href="#page-1">Go to Page 1</a>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="simple-page-slider.js"></script>
+<script type="text/javascript">
+$(window).on('hashchange', function() {
+    simplePageSlider.changePage(location.hash);
+});
+</script>
+</body>
+</html>
